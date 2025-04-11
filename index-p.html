@@ -3,22 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Deepanshu's Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <nav>
         <div class="left">Deepanshu's Portfolio</div>
-        <div class="right"></div>
-        <ul>
-          <li><a href="#home-section">HOME</a></li>
-          <li><a href="#about-section">ABOUT</a></li>
-          <li><a href="#skills-section">SKILL</a></li>
-          <li><a href="#projects-section">PROJECTS</a></li>
-          <li><a href="#resume-section">RESUME</a></li>
-          <li><a href="#contact-section">CONTACT ME</a></li>
-        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="right" id="nav-links">
+          <ul>
+            <li><a href="#home-section">HOME</a></li>
+            <li><a href="#about-section">ABOUT</a></li>
+            <li><a href="#skills-section">SKILLS</a></li>
+            <li><a href="#projects-section">PROJECTS</a></li>
+            <li><a href="#resume-section">RESUME</a></li>
+            <li><a href="#contact-section">CONTACT ME</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -31,7 +37,7 @@
         <div class="right-section">
           <img
             src="./images/web-developerat-work-illustration-png-9wxnnbpbatv5o2dn.png"
-            alt=""
+            alt="Developer Illustration"
           />
         </div>
       </section>
@@ -42,28 +48,19 @@
         <div class="about">
           <div class="left-about">
             <h3>Education</h3>
-            <div class="education">
-              <ul>
-                <li>10th - CBSE</li>
-                <p>Cynthia sr sec school<br />2019-20</p>
-                <li>12th - CBSE</li>
-                <p>Cynthia sr sec school<br />2021-22</p>
-                <li>Bachelors of computer application</li>
-                <p>Himalayan institute of technology<br />2022-25</p>
-              </ul>
-            </div>
-            <br />
+            <ul>
+              <li>10th - CBSE<br />Cynthia Sr Sec School (2019-20)</li>
+              <li>12th - CBSE<br />Cynthia Sr Sec School (2021-22)</li>
+              <li>Bachelors of Computer Application<br />Himalayan Institute of Technology (2022-25)</li>
+            </ul>
             <h3>Experience</h3>
-            <div class="experience">
-              <ul>
-                <li>Internship at codsoft</li>
-                <p>Virtual internship <br />15/feb/2025-15/mar/2025</p>
-                <li>Freelancer</li>
-              </ul>
-            </div>
+            <ul>
+              <li>Virtual Internship<br />CodSoft<br/>April 2025 - May 2025</li>
+              <li>Internship Trainee <br/>Unified Mentor Pvt. Ltd.<br/>April 2025 - Present</li>
+            </ul>
           </div>
           <div class="right-about">
-            <img src="./images/about_img.jpg" alt="image" />
+            <img src="./images/about_img.jpg" alt="About Me" />
           </div>
         </div>
       </section>
@@ -74,70 +71,53 @@
         <div class="box">
           <div class="left-skill">
             <h3>Technical Skills</h3>
-            <div class="skills">
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
-                <li>REACT</li>
-                <li>NODE JS</li>
-                <li>MONGO DB</li>
-              </ul>
-            </div>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>PHP</li>
+              <li>Python</li>
+            </ul>
           </div>
-          <img src="./images/full-stack-web-developer.svg" alt="images" />
+          <img src="./images/full-stack-web-developer.svg" alt="Full Stack Developer" />
           <div class="right-skill">
-            <h3>Soft skill</h3>
-            <div class="skills">
-              <ul>
-                <li>Team Work</li>
-                <li>Problem Solving</li>
-                <li>Communication</li>
-                <li>Time Management</li>
-                <li>Adaptability</li>
-                <li>Creativity</li>
-              </ul>
-            </div>
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Team Work</li>
+              <li>Problem Solving</li>
+              <li>Communication</li>
+              <li>Time Management</li>
+              <li>Adaptability</li>
+              <li>Creativity</li>
+            </ul>
           </div>
         </div>
       </section>
       <hr />
       <section id="projects-section">
-        <span class="text-gray">Some of my work(s) that I've done</span>
+        <span class="text-gray">Some of my work(s)</span>
         <h1>Projects</h1>
         <div class="projects">
           <div class="card">
-            <div class="front">
-              <h2>portfolio</h2>
-              <img src="" alt="" />
-            </div>
-            <div class="back">
-              <h2>portfolio</h2>
-              <p>It is a portfolio website</p>
-              <button onclick="location.href='https://github.com/deepanshuj19/Stone-Paper-Scissors-Game.git'">View</button>
-            </div>
+            <h2>Stone Paper Scissors Game</h2>
+            <p>A simple interactive game built using JavaScript.</p>
+            <button onclick="location.href='https://github.com/deepanshuj19/Stone-Paper-Scissors-Game.git'">View</button>
           </div>
           <div class="card">
-            <div class="front">
-              <h2>portfolio</h2>
-              <img src="" alt="" />
-            </div>
-            <div class="back">
-              <h2>portfolio</h2>
-              <p>It is a portfolio website</p>
-              <button onclick="location.href='#'">View</button>
-            </div>
+            <h2>Portfolio website</h2>
+            <p>A simple interactive game built using JavaScript.</p>
+            <button >View</button>
           </div>
           <div class="card">
-            <div class="front">
-              <h2>portfolio</h2>
-              <img src="" alt="" />
-            </div>
-            <div class="back">
-              <h2>portfolio</h2>
-              <p>It is a portfolio website</p>
-              <button onclick="location.href='#'">View</button>
-            </div>
+            <h2>Memory card game</h2>
+            <p>A simple interactive game built using JavaScript.</p>
+            <button >View</button>
+          </div>
+          <div class="card">
+            <h2>To-do list app</h2>
+            <p>A simple interactive game built using JavaScript.</p>
+            <button >View</button>
           </div>
         </div>
       </section>
@@ -145,27 +125,17 @@
       <section id="resume-section">
         <span class="text-gray">Hire me</span>
         <h1>Resume</h1>
-        <br />
         <div class="resume">
           <div class="left-resume">
             <h3>Deepanshu Jeena</h3>
-            <div class="desc">
-              A highly motivated fresher and a passionate Web Developer,
-              dedicated to creating impactful digital solutions through
-              expertise in Front-end Development (HTML, CSS, JavaScript, React)
-              and Back-end Development (Node JS, MongoDB). Proven track record
-              of delivering high-quality web applications, consistently
-              exceeding client expectations with a focus on Innovation,
-              Creativity, and User Experience.
-            </div>
-            <div class="resume-link">
-              <button onclick="location.href='#resume-link'">
-                Download resume
-              </button>
-            </div>
+            <p>
+              A highly motivated fresher and passionate Web Developer with expertise
+              in Front-end (HTML, CSS, JS, React) and Back-end (Node.js, MongoDB).
+            </p>
+            <button onclick="location.href='Deepanshu_Resume.pdf'">Download Resume</button>
           </div>
           <div class="right-resume">
-            <img src="./images/resume_img.jpg" alt="resume" />
+            <img src="./images/resume_img.jpg" alt="Resume Preview" />
           </div>
         </div>
       </section>
@@ -176,35 +146,34 @@
         <div class="contact">
           <div class="left-contact">
             <h3>Address</h3>
-            <p>C-Block , Nehru Colony, Dehradun, Uttarakhand</p>
+            <p>C-Block, Nehru Colony, Dehradun, Uttarakhand</p>
             <h3>Email</h3>
             <p>Deepanshujeena19@gmail.com</p>
             <h3>Phone</h3>
             <p>+91 1234567890</p>
           </div>
           <div class="right-contact">
-            <form action="">
+            <form id="contact-form">
               <label for="name">Name:</label>
-              <input type="text" id="name" placeholder="Name" />
+              <input type="text" id="name" name="name" required placeholder="Name" />
+
               <label for="email">Email:</label>
-              <input type="email" id="email" placeholder="Email" />
-              <textarea
-                name="message"
-                id="message"
-                cols="20"
-                rows="5"
-                placeholder="Message"
-              ></textarea>
+              <input type="email" id="email" name="email" required placeholder="Email" />
+
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required placeholder="Message"></textarea>
+
               <button type="submit">Send</button>
+              <p id="form-status"></p>
             </form>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <p>&copy; 2025 Portfolio Website</p>
+      <p>&copy; 2025 Deepanshu Jeena</p>
     </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="pscript.js"></script>
+    <script src="portfolio.js"></script>
   </body>
 </html>
