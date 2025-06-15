@@ -3,177 +3,186 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Deepanshu's Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="left">Deepanshu's Portfolio</div>
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+    <header class="header">
+      <nav class="navbar">
+        <h1 class="logo">MyPortfolio</h1>
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
         </div>
-        <div class="right" id="nav-links">
-          <ul>
-            <li><a href="#home-section">HOME</a></li>
-            <li><a href="#about-section">ABOUT</a></li>
-            <li><a href="#skills-section">SKILLS</a></li>
-            <li><a href="#projects-section">PROJECTS</a></li>
-            <li><a href="#resume-section">RESUME</a></li>
-            <li><a href="#contact-section">CONTACT ME</a></li>
-          </ul>
-        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="theme-toggle">🌙</button></li>
+        </ul>
       </nav>
     </header>
-    <main>
-      <section id="home-section">
-        <div class="left-section">
-          Hi, My name is <span class="name">Deepanshu</span>
-          <div>and I am a passionate</div>
-          <span id="element"></span>
+
+    <section id="home" class="section home">
+      <div class="content">
+        <h2>Hi, I'm <span>Deepanshu Jeena</span></h2>
+        <h3><span id="typing"></span></h3>
+        <a href="#projects" class="btn">View Projects</a>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img
+          src="./images/3d-rendered-illustration-businessman-with-laptop-books.jpg"
+          alt="Profile Picture"
+        />
+        <div>
+          <p>
+            I'm a passionate web developer with a strong foundation in front-end
+            technologies. I enjoy creating interactive and user-friendly web
+            applications. My goal is to continuously learn and improve my skills
+            in the field of web development.
+          </p>
+          <a href="#" class="btn">Download Resume</a>
         </div>
-        <div class="right-section">
-          <img
-            src="./images/web-developerat-work-illustration-png-9wxnnbpbatv5o2dn.png"
-            alt="Developer Illustration"
-          />
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-html5"></i>
+          <h4>HTML5</h4>
+          <p>Semantic markup & responsive structure</p>
         </div>
-      </section>
-      <hr />
-      <section id="about-section">
-        <span class="text-gray">What I have done so far</span>
-        <h1>About</h1>
-        <div class="about">
-          <div class="left-about">
-            <h3>Education</h3>
-            <ul>
-              <li>10th - CBSE<br />Cynthia Sr Sec School (2019-20)</li>
-              <li>12th - CBSE<br />Cynthia Sr Sec School (2021-22)</li>
-              <li>Bachelors of Computer Application<br />Himalayan Institute of Technology (2022-25)</li>
-            </ul>
-            <h3>Experience</h3>
-            <ul>
-              <li>Virtual Internship<br />CodSoft<br/>April 2025 - May 2025</li>
-              <li>Internship Trainee <br/>Unified Mentor Pvt. Ltd.<br/>April 2025 - Present</li>
-            </ul>
-          </div>
-          <div class="right-about">
-            <img src="./images/about_img.jpg" alt="About Me" />
-          </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt"></i>
+          <h4>CSS3</h4>
+          <p>Modern layouts, Flexbox, Grid & animations</p>
         </div>
-      </section>
-      <hr />
-      <section id="skills-section">
-        <span class="text-gray">What I am good at</span>
-        <h1>Skills</h1>
-        <div class="box">
-          <div class="left-skill">
-            <h3>Technical Skills</h3>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>PHP</li>
-              <li>Python</li>
-            </ul>
-          </div>
-          <img src="./images/full-stack-web-developer.svg" alt="Full Stack Developer" />
-          <div class="right-skill">
-            <h3>Soft Skills</h3>
-            <ul>
-              <li>Team Work</li>
-              <li>Problem Solving</li>
-              <li>Communication</li>
-              <li>Time Management</li>
-              <li>Adaptability</li>
-              <li>Creativity</li>
-            </ul>
-          </div>
+        <div class="skill-card">
+          <i class="fab fa-js"></i>
+          <h4>JavaScript</h4>
+          <p>DOM manipulation, ES6+, APIs</p>
         </div>
-      </section>
-      <hr />
-      <section id="projects-section">
-        <span class="text-gray">Some of my work(s)</span>
-        <h1>Projects</h1>
-        <div class="projects">
-          <div class="card">
-            <h2>Stone Paper Scissors Game</h2>
-            <p>A simple interactive game built using JavaScript.</p>
-            <button onclick="location.href='https://github.com/deepanshuj19/Stone-Paper-Scissors-Game.git'">View</button>
-          </div>
-          <div class="card">
-            <h2>Portfolio website</h2>
-            <p>A simple website created using html , css & JavaScript.</p>
-            <button onclick="location.href='https://github.com/deepanshuj19/portfolio-website/tree/main'" View</button>
-          </div>
-          <div class="card">
-            <h2>Landing page</h2>
-            <p>A simple interactive landing page with complete front-end.</p>
-            <button onclick="location.href='https://github.com/deepanshuj19/landing-page.git'" >View</button>
-          </div>
-          <div class="card">
-            <h2>To-do list app</h2>
-            <p>A simple interactive website built using JavaScript.</p>
-            <button onclick="location.href=''" >View</button>
-          </div>
+        <div class="skill-card">
+          <i class="fab fa-react"></i>
+          <h4>React.js</h4>
+          <p>Component-based UI & state management</p>
         </div>
-      </section>
-      <hr />
-      <section id="resume-section">
-        <span class="text-gray">Hire me</span>
-        <h1>Resume</h1>
-        <div class="resume">
-          <div class="left-resume">
-            <h3>Deepanshu Jeena</h3>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Stone Paper Scissors Game</h3>
+          <p>
+            An interactive game built using JavaScript, showcasing logic
+            implementation and user interaction.
+          </p>
+          <a href="https://deepanshuj19.github.io/stone-paper-scissors" target="_blank" rel="noopener noreferrer">Live Demo</a> |
+          <a href="https://github.com/deepanshuj19/Stone-Paper-Scissors-Game"
+            >GitHub</a
+          >
+        </div>
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>
+            A personal portfolio website developed using HTML, CSS, and
+            JavaScript to highlight my skills and projects.
+          </p>
+          <a href="#">Live Demo</a> |
+          <a href="https://github.com/deepanshuj19/portfolio-website"
+            >GitHub</a
+          >
+        </div>
+        <div class="project-card">
+          <h3>Landing Page</h3>
+          <p>
+            A responsive landing page designed to demonstrate front-end
+            development capabilities.
+          </p>
+          <a href="#">Live Demo</a> |
+          <a href="https://github.com/deepanshuj19/landing-page">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="section resume">
+      <h2>Resume</h2>
+      <div class="resume-section">
+        <h3>Education</h3>
+        <ul class="timeline">
+          <li>
+            <h4>Bachelor's of Computer Applications</h4>
+            <p>Himalayan Institute Of Technology | 2022 - 2025</p>
+            <p>CGPA: 6.5 (Expected)</p>
+          </li>
+          <li>
+            <h4>High School (12th Grade - PCM)</h4>
+            <p>Cynthia Sr Sec School  | 2021 - 2022</p>
+            <p>Percentage: 55%</p>
+          </li>
+        </ul>
+      </div>
+      <div class="resume-section">
+        <h3>Experience</h3>
+        <ul class="timeline">
+          <li>
+            <h4>Frontend Intern - Codsoft</h4>
+            <p>April - May 2025</p>
             <p>
-              A highly motivated fresher and passionate Web Developer with expertise
-              in Front-end (HTML, CSS, JS, React) and Back-end (Node.js, MongoDB).
+              Worked on building responsive websites, landing pages, and mini
+              projects using HTML, CSS, and JavaScript. Collaborated on UI
+              improvements and mobile-first design.
             </p>
-            <button onclick="location.href='Deepanshu_Resume.pdf'">Download Resume</button>
-          </div>
-          <div class="right-resume">
-            <img src="./images/resume_img.jpg" alt="Resume Preview" />
-          </div>
-        </div>
-      </section>
-      <hr />
-      <section id="contact-section">
-        <span class="text-gray">Get in touch with me</span>
-        <h1>Contact Me</h1>
-        <div class="contact">
-          <div class="left-contact">
-            <h3>Address</h3>
-            <p>C-Block, Nehru Colony, Dehradun, Uttarakhand</p>
-            <h3>Email</h3>
-            <p>Deepanshujeena19@gmail.com</p>
-            <h3>Phone</h3>
-            <p>+91 1234567890</p>
-          </div>
-          <div class="right-contact">
-            <form id="contact-form">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required placeholder="Name" />
+          </li>
+          <li>
+            <h4>Web Developer Intern - Unified Mentor Pvt Ltd</h4>
+            <p>April 2025 - Present</p>
+            <p>
+              Designed and developed personal portfolios, small business sites,
+              and landing pages for clients. Focused on clean design and user
+              experience.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required placeholder="Email" />
+    <section id="contact" class="section contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div class="social-icons">
+        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </section>
 
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" required placeholder="Message"></textarea>
-
-              <button type="submit">Send</button>
-              <p id="form-status"></p>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
     <footer>
-      <p>&copy; 2025 Deepanshu Jeena</p>
+      <p>&copy; 2025 Deepanshu Jeena. All rights reserved.</p>
     </footer>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="portfolio.js"></script>
   </body>
 </html>
